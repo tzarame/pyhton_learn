@@ -1,0 +1,6 @@
+
+print('Скільки пан має гривнів:')
+x = float(input())
+r = 9.6
+y = float( x / r )
+print('У шекелях це ', y)
