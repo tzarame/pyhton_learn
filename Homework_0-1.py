@@ -1,23 +1,34 @@
 #inputs 
 
-#number_1 = input("Enter fist number: ")
-#number_1 = int(number_1)
-# number_2 = input("Enter second number: ")
-# number_2 = int(number_2)
+number_1 = int(input("Enter fist number: "))
+number_2 = int(input("Enter second number: "))
+
 
 #debug 
-number_1 = 10
-number_2 = 5
+# number_1 = 10
+# number_2 = 5
 
-operator = input("Enter math operator, + - * / ")
+while True: 
+    operator = input("Enter math operator, + - * / ")
+    if operator == "quit":
+        break
     if operator == "+":
         result = number_1 + number_2
+        break
     elif operator == "-":
         result = number_1 - number_2
-    elif operator == "-":
+        break
+    elif operator == "*":
         result = number_1 * number_2
-    elif operator == "-":
-        result = number_1 / number_2
+        break
+    elif operator == "/":
+        if number_2 != 0:
+            result = number_1 / number_2
+            break
+        else:
+            print("Divide by zero -  NO WAY")
+            break
     else:
-        result = "Пошел нахуй"
+        result = "Use proper math operator"
+        break
 print(result)
