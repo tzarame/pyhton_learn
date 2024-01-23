@@ -1,0 +1,6 @@
+list_to_remove = [0,3,4,6,3,0,0,3]
+for i in range(list_to_remove.count(0)):
+#for i in range(5):
+    list_to_remove.remove(0)
+    list_to_remove.append(0)
+print(list_to_remove)
